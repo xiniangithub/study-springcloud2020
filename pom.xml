@@ -6,7 +6,7 @@
 
     <groupId>com.wez</groupId>
     <artifactId>study-springcloud2020</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 
     <packaging>pom</packaging>
 
@@ -17,6 +17,8 @@
         <module>study-springcloud2020-provider-payment8001</module>
         <module>study-springcloud2020-consumer-order80</module>
         <module>study-springcloud2020-api-commons</module>
+        <module>study-springcloud2020-eureka-server7001</module>
+        <module>study-springcloud2020-eureka-server7002</module>
     </modules>
 
     <!-- 统一jar包版本管理 -->
@@ -37,7 +39,7 @@
             <dependency>
                 <groupId>com.wez</groupId>
                 <artifactId>study-springcloud2020-api-commons</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
             <!-- Spring Boot 2.2.2.RELEASE -->
             <dependency>

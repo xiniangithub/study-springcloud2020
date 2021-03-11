@@ -15,3 +15,14 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.wez.springcloud.entities
+
+eureka:
+  client:
+    # 表示是否将自己注册到Eureka Server中，默认true
+    register-with-eureka: true
+    # 是否从Eureka Server抓取自己已有的注册信息，默认true。单节点无所谓，集群必须设置为true才能配合Ribbon使用负载均衡
+    fetch-registry: true
+    service-url:
+      # defaultZone: http://localhost:7001/eureka/ 单机Eureka Server
+      defaultZone: http://eureka-server7001.com:7001/eureka/,http://eureka-server7002.com:7002/eureka/ # 集群Eureka Server
+
