@@ -13,10 +13,10 @@ import org.springframework.web.client.RestTemplate;
  */
 @Slf4j
 @RestController
-@RequestMapping(value = "/order")
 public class OrderController {
 
-    private static final String PAYMENT_URL = "http://localhost:8001";
+//    private static final String PAYMENT_URL = "http://localhost:8001";
+    private static final String PAYMENT_URL = "http://STUDY-SPRINGCLOUD2020-PROVIDER-PAYMENT";
 
     @Autowired
     private RestTemplate restTemplate;
