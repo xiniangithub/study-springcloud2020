@@ -15,3 +15,8 @@
     - study-springcloud2020-provider-payment8002
   - Provider注册到EurekaServer集群中
   - Consumer注册到EurekaServer集群中
+  
+# v1.2
+- 服务注册与发现：Zookeeper
+  - 服务提供者模块：study-springcloud2020-provider-zookeeper-payment8004
+  - 服务消费者模块：study-springcloud2020-consumer-zookeeper-order80
