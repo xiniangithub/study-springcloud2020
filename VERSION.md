@@ -20,3 +20,7 @@
 - 服务注册与发现：Zookeeper
   - 服务提供者模块：study-springcloud2020-provider-zookeeper-payment8004
   - 服务消费者模块：study-springcloud2020-consumer-zookeeper-order80
+  
+ # v1.3
+ - 负载均衡服务调用：Ribbon 
+   - 改造study-springcloud2020-consumer-order80，测试Ribbon；
