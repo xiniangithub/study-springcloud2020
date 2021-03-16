@@ -24,3 +24,8 @@
  # v1.3
  - 负载均衡服务调用：Ribbon 
    - 改造study-springcloud2020-consumer-order80，测试Ribbon；
+ 
+ # v1.4
+ - 负载均衡服务调用：OpenFeign
+   - OpenFeign示例：study-springcloud2020-consumer-openfeign-order80
+ 

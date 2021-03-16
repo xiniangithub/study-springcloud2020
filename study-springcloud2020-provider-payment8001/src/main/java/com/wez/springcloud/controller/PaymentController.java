@@ -45,4 +45,21 @@ public class PaymentController {
         }
     }
 
+    @GetMapping("/timeout/get/{id}")
+    public CommonResult<Payment> timeoutGetPaymentById(@PathVariable("id") Long id) {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Payment payment = paymentService.getPaymentById(id);
+
+        if (payment != null) {
+            return new CommonResult(200, "查询成功"+serverPort, payment);
+        } else {
+            return new CommonResult(444, "查询失败");
+        }
+    }
+
 }
