@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @Author wez
  * @Time 2021/3/25 21:10
  */
-@FeignClient(value = "STUDY-SPRINGCLOUD2020-PROVIDER-HYSTRIX-PAYMENT") // 服务提供者名称
+@FeignClient(value = "STUDY-SPRINGCLOUD2020-PROVIDER-HYSTRIX-PAYMENT", fallback = PaymentHystrixFallbackService.class) // 服务提供者名称
 public interface PaymentHystrixService {
 
     @GetMapping("/payment/ok/{id}")
