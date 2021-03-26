@@ -24,14 +24,34 @@ public class PaymentController {
     @Value("${server.port}")
     private String serverPort;
 
+    /**
+     * 服务降级
+     * @param id
+     * @return
+     */
     @GetMapping("/ok/{id}")
     public String paymentInfoOk(@PathVariable("id") Integer id) {
         return paymentService.paymentInfoOk(id);
     }
 
+    /**
+     * 服务降级
+     * @param id
+     * @return
+     */
     @GetMapping("/timeout/{id}")
     public String paymentInfoTimeout(@PathVariable("id") Integer id) {
         return paymentService.paymentInfoTimeout(id);
+    }
+
+    /**
+     * 服务熔断
+     * @param id
+     * @return
+     */
+    @GetMapping("/breakdown/{id}")
+    public String paymentInfoBreakdown(@PathVariable("id") Integer id) {
+        return paymentService.paymentInfoBreakdown(id);
     }
 
 }

@@ -12,4 +12,11 @@ public interface PaymentService {
 
     String paymentInfoTimeout(Integer id);
 
+    /**
+     * 服务熔断
+     * @param id
+     * @return
+     */
+    String paymentInfoBreakdown(Integer id);
+
 }
