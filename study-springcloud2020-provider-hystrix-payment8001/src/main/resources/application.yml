@@ -1,0 +1,22 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: study-springcloud2020-provider-hystrix-payment
+
+eureka:
+  client:
+    # 表示是否将自己注册到Eureka Server中，默认true
+    register-with-eureka: true
+    # 是否从Eureka Server抓取自己已有的注册信息，默认true。单节点无所谓，集群必须设置为true才能配合Ribbon使用负载均衡
+    fetch-registry: true
+    service-url:
+      # defaultZone: http://localhost:7001/eureka/ 单机Eureka Server
+      defaultZone: http://eureka-server7001.com:7001/eureka/,http://eureka-server7002.com:7002/eureka/ # 集群Eureka Server
+  instance:
+    # Eureka监控界面显示自定义名称
+    instance-id: provider-hystrix-payment8001
+    # 访问路径显示IP
+    prefer-ip-address: true
+
