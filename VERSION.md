@@ -29,5 +29,8 @@
  - 负载均衡服务调用：OpenFeign
    - OpenFeign示例：study-springcloud2020-consumer-openfeign-order80
  
- # 1.5
+ # v1.5
  - 服务熔断降级：Hystrix
+ 
+ #v1.6
+ - 服务网关：Gateway
