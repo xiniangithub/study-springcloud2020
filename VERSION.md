@@ -33,4 +33,7 @@
  - 服务熔断降级：Hystrix
  
  #v1.6
- - 服务网关：Gateway
+ - 服务网关：Spring Cloud Gateway
+ 
+ # v1.7
+ - 消息驱动：Spring Cloud Stream
