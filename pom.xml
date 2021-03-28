@@ -28,6 +28,7 @@
         <module>study-springcloud2020-gateway9527</module>
         <module>study-springcloud2020-stream-kafka-producer8801</module>
         <module>study-springcloud2020-stream-kafka-consumer8802</module>
+        <module>study-springcloud2020-stream-kafka-consumer8803</module>
     </modules>
 
     <!-- 统一jar包版本管理 -->
