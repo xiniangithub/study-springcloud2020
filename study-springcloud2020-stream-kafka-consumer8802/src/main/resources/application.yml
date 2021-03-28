@@ -1,0 +1,31 @@
+server:
+  port: 8802
+
+spring:
+  application:
+    name: study-springcloud2020-stream-kafka-consumer
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 127.0.0.1:9092 # Kafka地址
+          auto-create-topics: true # 自动创建Topic，默认true
+      bindings:
+        input:
+          destination: stream-demo # Topic名称
+          content-type: application/json # 发送消息的格式
+
+eureka:
+  client:
+    # 表示是否将自己注册到Eureka Server中，默认true
+    register-with-eureka: false
+    # 是否从Eureka Server抓取自己已有的注册信息，默认true。单节点无所谓，集群必须设置为true才能配合Ribbon使用负载均衡
+    fetch-registry: true
+    service-url:
+      # defaultZone: http://localhost:7001/eureka/ 单机Eureka Server
+      defaultZone: http://eureka-server7001.com:7001/eureka/,http://eureka-server7002.com:7002/eureka/ # 集群Eureka Server
+  instance:
+    lease-renewal-interval-in-seconds: 30 # 设置心跳的时间间隔，默认30s
+    lease-expiration-duration-in-seconds: 90 # 超时时间间隔，默认90s
+    instance-id: consumer-8802.com # 在信息列表显示主机名称
+    prefer-ip-address: true # 访问路径变为IP地址
