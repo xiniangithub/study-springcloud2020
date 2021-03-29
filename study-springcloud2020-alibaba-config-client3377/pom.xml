@@ -22,7 +22,7 @@
     </properties>
 
     <dependencies>
-        <!-- Nacos服务注册 -->
+        <!-- Nacos配置中心 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
