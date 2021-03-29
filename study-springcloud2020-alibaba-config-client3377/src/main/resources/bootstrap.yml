@@ -1,3 +1,9 @@
+# Nacos 配置中的配置需要配置在bootstrap.yml中
 spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.13:8848
+        file-extension: yaml
   profiles:
     active: dev
