@@ -40,3 +40,6 @@
  
  # v1.8
  - 服务注册：Spring Cloud Alibaba Nacos
+ 
+ # v1.9
+ - 配置中心：Spring Cloud Alibaba Nacos
