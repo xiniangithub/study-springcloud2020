@@ -37,3 +37,6 @@
  
  # v1.7
  - 消息驱动：Spring Cloud Stream
+ 
+ # v1.8
+ - 服务注册：Spring Cloud Alibaba Nacos
