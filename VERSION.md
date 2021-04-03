@@ -43,3 +43,7 @@
  
  # v1.9
  - 配置中心：Spring Cloud Alibaba Nacos
+ 
+ # v1.10
+ - 服务限流：Spring Cloud Alibaba Sentinel
+ 

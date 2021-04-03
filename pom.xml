@@ -33,6 +33,7 @@
         <module>study-springcloud2020-alibaba-provider-payment9002</module>
         <module>study-springcloud2020-alibaba-consumer-order80</module>
         <module>study-springcloud2020-alibaba-config-client3377</module>
+        <module>study-springcloud2020-alibaba-sentinel-service8401</module>
     </modules>
 
     <!-- 统一jar包版本管理 -->
@@ -40,7 +41,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <study-springcloud2020.version>1.9</study-springcloud2020.version>
+        <study-springcloud2020.version>1.10</study-springcloud2020.version>
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.17</log4j.version>
         <lombok.version>1.16.18</lombok.version>
